@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .header { width: 100%; height: 20%; }
+    .header img { float: left; }
+    .content { color: green; }
+    .footer { background-color: #f1f1f1; padding: 20px; text-align: center; }
+
+    .nav {
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+
+    .nav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: blink;
+    }
+
+    .nav a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .menu-section {
+      margin-bottom: 40px;
+    }
+
+    .menu-section h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .menu-item img {
+      width: 150px;
+      height: auto;
+      margin-right: 20px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .menu-item-info {
+      flex: 1;
+    }
+
+    .menu-item-info h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .menu-item-info p {
+      margin-bottom: 5px;
+    }
+
+    .menu-item-info .price {
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpeg" alt="Restaurant Logo">
+        <h1>Local Restaurant</h1>
+        <p>114 State St, Framingham, MA, 01701</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: localrestaurant@gmail.com</p>
+    </div>
+
+    <div class="nav">
+        <a href="HomePage.html">Home</a>
+        <a href="SpecialtyDish.html">Specialty Dish</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Reservation.html">Make a Reservation</a>
+    </div>
+
+        <br>
+    <div class="content">
+        <div class="menu-section">
+            <h2>Specialty Dishes</h2>
+            <div class="menu-item">
+                <img src="dish1.jpeg" alt="Specialty Dish 1">
+                <div class="menu-item-info">
+                    <h3>Deluxe Seafood Platter</h3>
+                    <p>Our Deluxe Seafood Platter is a delightful combination of fresh seafood sourced locally and expertly prepared by our skilled chefs.</p>
+                    <p class="price">$29.99</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="dish2.jpeg" alt="Specialty Dish 2">
+                <div class="menu-item-info">
+                    <h3>Grilled Filet Mignon</h3>
+                    <p>Indulge in the exquisite flavors of our Grilled Filet Mignon. This tender and juicy steak showcases the culinary expertise of our chefs.</p>
+                    <p class="price">$34.99</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="dish3.jpeg" alt="Specialty Dish 3">
+                <div class="menu-item-info">
+                    <h3>Mango Tango Salad</h3>
+                    <p>Our Mango Tango Salad is a refreshing blend of crisp greens, juicy mango slices, tangy citrus dressing, and crunchy nuts.</p>
+                    <p class="price">$16.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="appetizer1.jpg" alt="Appetizer 1">
+                <div class="menu-item-info">
+                    <h3>Caprese Salad</h3>
+                    <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.</p>
+                    <p class="price">$9.99</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="appetizer2.jpg" alt="Appetizer 2">
+                <div class="menu-item-info">
+                    <h3>Chicken Wings</h3>
+                    <p>Delicious chicken wings with your choice of sauce.</p>
+                    <p class="price">$11.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <img src="maincourse1.jpg" alt="Main Course 1">
+                <div class="menu-item-info">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon fillet grilled to perfection, served with roasted vegetables.</p>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="maincourse2.jpg" alt="Main Course 2">
+                <div class="menu-item-info">
+                    <h3>Chicken Parmesan</h3>
+                    <p>Breaded chicken breast topped with marinara sauce and melted cheese, served with spaghetti.</p>
+                    <p class="price">$16.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="dessert1.jpg" alt="Dessert 1">
+                <div class="menu-item-info">
+                    <h3>Tiramisu</h3>
+                    <p>Layers of ladyfingers, mascarpone cream, and espresso, topped with cocoa powder.</p>
+                    <p class="price">$7.99</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="dessert2.jpg" alt="Dessert 2">
+                <div class="menu-item-info">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Decadent chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
+                    <p class="price">$8.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Local Restaurant &copy; 2023. All rights reserved.</p>
+        <p>Phone: (123) 456-7890 | Email: <a href="mailto:localrestaurant@gmail.com">localrestaurant@gmail.com</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/localrestaurant">Facebook</a> and <a href="https://www.instagram.com/localrestaurant">Instagram</a></p>
+    </div>
+</body>
+</html>

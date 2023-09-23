@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+
+    /* Header styles */
+    .banner {
+      background-image: url('background_image.png');
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      color: #fff;
+      text-align: left;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h1.site-name {
+      font-size: 37px;
+      color: floralwhite;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    h2.tagline {
+      font-size: 20px;
+      color: floralwhite;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      color: floralwhite;
+    }
+
+    /* Navigation styles */
+    .navbar {
+      background-color: #333;
+      list-style-type: none;
+      margin: 17px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      background-color: #114;
+    }
+
+    /* Retirement Page Styles */
+    .retirement-section {
+      display: flex;
+      margin: 20px 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .retirement-section img {
+      width: 200px;
+      height: auto;
+    }
+
+    .retirement-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Back-to-top link styles */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: none;
+    }
+
+    #back-to-top:hover {
+      background-color: #114;
+    }
+
+    .retirement-section {
+      display: flex;
+      margin: 20px 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .retirement-section img {
+      width: 200px;
+      height: auto;
+    }
+
+    .retirement-section div {
+      flex-grow: 1;
+      padding-left: 20px;
+      min-width: 300px;
+    }
+
+    .retirement-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <h1 class="site-name">Financial Information</h1>
+        <h2 class="tagline">Building Wealth, One Step at a Time</h2>
+        <p class="contact-info">Contact: Jinesh Patel</p>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="Financial_planning.html">Financial Planning</a></li>
+          <li><a href="Investment_Page.html">Investment Page</a></li>
+          <li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+          <li><a href="Form.html">Form</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Retirement Planning</h1>
+      <section class="retirement-section">
+        <img src="retirement_planning.jpg" alt="Retirement Planning">
+        <div>
+          <h2>What is Retirement Planning?</h2>
+          <p>Retirement planning involves evaluating your current financial standing and creating an accumulation strategy that will help to ensure a desired retirement lifestyle. It is the process of determining retirement income goals, and the actions and decisions necessary to achieve those goals.</p>
+        </div>
+      </section>
+
+      <section class="retirement-section">
+        <img src="benefits_retirement.jpg" alt="Benefits of Retirement Planning">
+        <div>
+          <h2>Benefits of Retirement Planning</h2>
+          <p>Retirement planning is important to help you ensure a financially secure and comfortable retirement. The earlier you start planning, the more prepared you will be for retirement. It gives you the freedom to decide when and how you will retire, and can also provide a financial safety net in the event of unexpected health problems.</p>
+        </div>
+      </section>
+
+      <section class="retirement-section">
+        <img src="steps_retirement.jpg" alt="Steps to Retirement Planning">
+        <div>
+          <h2>Steps to Retirement Planning</h2>
+          <p>1. Evaluate your current financial situation.<br>2. Determine your retirement income needs.<br>3. Consider your retirement savings options.<br>4. Create a retirement budget.<br>5. Plan for healthcare expenses.<br>6. Review and adjust your plan regularly.</p>
+        </div>
+      </section>
+
+      <section class="retirement-section">
+        <img src="calculator.jpg" alt="Retirement Calculator">
+        <div>
+          <h2>Retirement Calculators</h2>
+          <p>Retirement calculators can be a helpful tool in planning your financial future. By inputting some basic information, you can get an estimate of how much you need to save to have a comfortable retirement. Remember, the numbers provided by calculators are only estimates, but they can serve as a useful starting point.</p>
+          <a class="retirement-calculator" href="https://www.bankrate.com/retirement/retirement-plan-calculator/" target="_blank">Try this retirement calculator!</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Financial Information Website. All rights reserved. Jinesh Patel</p>
+    </footer>
+
+    <a href="#top" id="back-to-top">Back to Top</a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 100) {
+        document.getElementById('back-to-top').style.display = 'block';
+      } else {
+        document.getElementById('back-to-top').style.display = 'none';
+      }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

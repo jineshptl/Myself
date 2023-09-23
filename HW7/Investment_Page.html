@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+
+    /* Header styles */
+    .banner {
+      background-image: url('background_image.png');
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      color: #fff;
+      text-align: left;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h1.site-name {
+      font-size: 37px;
+      color: floralwhite;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    h2.tagline {
+      font-size: 20px;
+      color: floralwhite;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      color: floralwhite;
+    }
+
+    /* Navigation styles */
+    .navbar {
+      background-color: #333;
+      list-style-type: none;
+      margin: 17px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      background-color: #114;
+    }
+
+    /* Investment Page Styles */
+    .investment-section {
+      display: flex;
+      margin: 20px 0;
+      align-items: flex-start;
+    }
+
+    .investment-section img {
+      width: 300px;
+      margin-right: 20px;
+    }
+    
+    .investment-section div {
+      flex: 1;
+    }
+
+    .investment-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    /* Real Estate Section Styles */
+    .real-estate-section {
+      display: flex;
+      margin: 20px 0;
+      align-items: flex-start;
+    }
+
+    .real-estate-section img {
+      width: 300px;
+      margin-right: 20px;
+    }
+
+    .real-estate-section div {
+      flex: 1;
+    }
+
+    .real-estate-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    /* CD Section Styles */
+    .cd-section {
+      display: flex;
+      margin: 20px 0;
+      align-items: flex-start;
+    }
+
+    .cd-section img {
+      width: 300px;
+      margin-right: 20px;
+    }
+
+    .cd-section div {
+      flex: 1;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Back-to-top link styles */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: none;
+    }
+
+    #back-to-top:hover {
+      background-color: #114;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <h1 class="site-name">Financial Information</h1>
+        <h2 class="tagline">Building Wealth, One Step at a Time</h2>
+        <p class="contact-info">Contact: Jinesh Patel</p>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="Financial_planning.html">Financial Planning</a></li>
+          <li><a href="Investment_Page.html">Investment Page</a></li>
+          <li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+          <li><a href="Form.html">Form</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Investment Page</h1>
+      
+      <section class="investment-section">
+        <div>
+          <h2>Stocks</h2>
+          <p>Investing in stocks means buying shares of a company. As the company grows and becomes more profitable, the value of its stock rises. On the other hand, if a company performs poorly, the stock's value drops. The price of a stock can also go up or down based on market conditions.</p>
+          <p>When investing in stocks, it's important to research and analyze the company's financial health, industry trends, and market conditions. Diversification is key to managing risk, as investing in a variety of stocks can help mitigate the impact of individual company performance.</p>
+        </div>
+        <img src="stocks.jpg" alt="Stocks Image">
+      </section>
+
+      <section class="investment-section">
+        <div>
+          <h2>Bonds</h2>
+          <p>Bonds are a form of investment that involves lending money to an organization in exchange for periodic interest payments plus the return of the bond's face amount when it matures. Government entities, municipalities, and corporations issue bonds to raise funds.</p>
+          <p>Bonds are generally considered less volatile than stocks and can provide a steady stream of income. They are classified based on their issuer, such as government bonds, municipal bonds, and corporate bonds. The risk and return of bonds vary based on factors like credit rating, interest rate, and maturity period.</p>
+        </div>
+        <img src="bonds.jpg" alt="Bonds Image">
+      </section>
+
+      <section class="investment-section">
+        <div>
+          <h2>Mutual Funds</h2>
+          <p>A mutual fund is an investment company that pools money from many people and invests it in a portfolio of stocks, bonds, or other assets. Mutual funds offer a way for investors to participate in a diversified portfolio without having to purchase and manage individual securities.</p>
+          <p>Mutual funds are managed by professional fund managers who make investment decisions on behalf of the investors. They offer different types of funds, including equity funds, bond funds, index funds, and balanced funds. Investors can choose funds based on their risk tolerance, investment goals, and time horizon.</p>
+        </div>
+        <img src="mutual_funds.jpg" alt="Mutual Funds Image">
+      </section>
+      
+      <section class="real-estate-section">
+        <img src="real_estate.jpg" alt="Real Estate Image">
+        <div>
+          <h2>Real Estate</h2>
+          <p>Real estate refers to land and any physical property or improvements attached to it. Real estate investments can include residential properties, commercial properties, and land. Real estate investments can generate income through rental properties or appreciate in value over time.</p>
+          <p>Real estate can offer potential tax benefits and can serve as a hedge against inflation. However, it requires careful research, due diligence, and management. Investing in real estate can involve risks such as market fluctuations, property maintenance, and liquidity challenges. It is important to assess your financial goals, risk tolerance, and market conditions before investing in real estate.</p>
+        </div>
+      </section>
+      
+      <section class="cd-section">
+        <img src="cd.jpg" alt="CD Image">
+        <div>
+          <h2>Certificate of Deposit (CD)</h2>
+          <p>A Certificate of Deposit (CD) is a time deposit offered by banks and financial institutions. It is a low-risk investment option where you deposit a specific amount of money for a specific period at a fixed interest rate. CDs are low-risk investments and provide a guaranteed return at maturity. However, early withdrawal may result in penalties.</p>
+          <p>CDs offer a predictable and fixed rate of return, making them suitable for conservative investors seeking stability and preservation of capital. They are insured by the FDIC (Federal Deposit Insurance Corporation) up to the maximum limit allowed by law.</p>
+          <p>CDs typically have a maturity period ranging from a few months to several years. The interest rates offered on CDs may vary depending on the duration of the deposit. Longer-term CDs often offer higher interest rates.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Financial Information Website. All rights reserved. Jinesh Patel</p>
+    </footer>
+
+    <a href="#" id="back-to-top">Back to Top</a>
+
+  </div>
+
+  <script>
+    // JavaScript code
+    document.addEventListener("DOMContentLoaded", function() {
+      var backToTopLink = document.getElementById("back-to-top");
+
+      backToTopLink.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      window.addEventListener("scroll", function() {
+        // Show or hide the back-to-top link based on scroll position
+        if (window.pageYOffset > 70) {
+          backToTopLink.style.display = "block";
+        } else {
+          backToTopLink.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

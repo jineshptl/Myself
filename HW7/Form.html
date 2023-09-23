@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+
+    /* Header styles */
+    .banner {
+      background-image: url('background_image.png');
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      color: #fff;
+      text-align: left;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h1.site-name {
+      font-size: 37px;
+      color: floralwhite;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    h2.tagline {
+      font-size: 20px;
+      color: floralwhite;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      color: floralwhite;
+    }
+
+    /* Navigation styles */
+    .navbar {
+      background-color: #333;
+      list-style-type: none;
+      margin: 17px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      background-color: #114;
+    }
+
+    /* Form styles */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table td, table th {
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    .form-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Back-to-top link styles */
+    #back-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: none;
+    }
+
+    #back-to-top:hover {
+      background-color: #114;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <h1 class="site-name">Financial Information</h1>
+        <h2 class="tagline">Building Wealth, One Step at a Time</h2>
+        <p class="contact-info">Contact: Jinesh Patel</p>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="Financial_planning.html">Financial Planning</a></li>
+          <li><a href="Investment_Page.html">Investment Page</a></li>
+          <li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+          <li><a href="Form.html">Form</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <h1>Form</h1>
+            <form>
+        <h2>Financial Information Form</h2>
+        <p>Fill out the form below to provide your financial information.</p>
+        <p>Privacy policy: Your information will be used for financial analysis purposes only and will not be shared with third parties.</p>
+
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone:</label></td>
+            <td><input type="tel" id="phone" name="phone" /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td><input type="text" id="address" name="address" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Preferred Option:</label></td>
+            <td>
+              <input type="radio" id="option1" name="preferred-option" value="Option 1" />
+              <label for="option1 ">Investments Portfolio</label><br />
+              <input type="radio" id="option2" name="preferred-option" value="Option 2" />
+              <label for="option2">Savings Account</label><br />
+              <input type="radio" id="option3" name="preferred-option" value="Option 3" />
+              <label for="option3">Retirement Plan</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Preferred Financial Products:</label></td>
+            <td>
+              <table>
+                <tr>
+                  <td><input type="checkbox" id="checkbox1" name="preferred-products" value="Mutual Funds" /></td>
+                  <td><label for="checkbox1">Mutual Funds</label></td>
+                  <td><input type="checkbox" id="checkbox2" name="preferred-products" value="Stocks" /></td>
+                  <td><label for="checkbox2">Stocks</label></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="checkbox3" name="preferred-products" value="Bonds" /></td>
+                  <td><label for="checkbox3">Bonds</label></td>
+                  <td><input type="checkbox" id="checkbox4" name="preferred-products" value="Exchange-Traded Funds (ETFs)" /></td>
+                  <td><label for="checkbox4">Exchange-Traded Funds (ETFs)</label></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="checkbox5" name="preferred-products" value="Retirement Accounts" /></td>
+                  <td><label for="checkbox5">Retirement Accounts</label></td>
+                  <td><input type="checkbox" id="checkbox6" name="preferred-products" value="Savings Accounts" /></td>
+                  <td><label for="checkbox6">Savings Accounts</label></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="checkbox7" name="preferred-products" value="Real Estate Investments" /></td>
+                  <td><label for="checkbox7">Real Estate Investments</label></td>
+                  <td><input type="checkbox" id="checkbox8" name="preferred-products" value="Cryptocurrencies" /></td>
+                  <td><label for="checkbox8">Cryptocurrencies</label></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="question">Question of the Month:</label></td>
+            <td>
+              <select id="question" name="question[]" multiple size="5">
+                <option value="What is your current investment strategy?">What is your current investment strategy?</option>
+                <option value="How do you define your risk tolerance?">How do you define your risk tolerance?</option>
+                <option value="What are your financial goals for the next 5 years?">What are your financial goals for the next 5 years?</option>
+                <option value="How comfortable are you with market volatility?">How comfortable are you with market volatility?</option>
+                <option value="What is your investment time horizon?">What is your investment time horizon?</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="rating">Rating:</label></td>
+            <td>
+              <fieldset>
+                <label><input type="radio" name="rating" value="Excellent" /> Excellent</label><br />
+                <label><input type="radio" name="rating" value="Good" /> Good</label><br />
+                <label><input type="radio" name="rating" value="Average" /> Average</label><br />
+                <label><input type="radio" name="rating" value="Below Average" /> Below Average</label><br />
+              </fieldset>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="comment">Comments:</label></td>
+            <td><textarea id="comment" name="comment" rows="5" maxlength="50" wrap="soft"></textarea></td>
+          </tr>
+        </table>
+
+        <div class="form-buttons">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Financial Information Website. All rights reserved. Jinesh Patel</p>
+    </footer>
+
+    <a href="#top-link" id="back-to-top">Back to Top</a> <!-- Back-to-top link -->
+
+  </div>
+
+  <script>
+    // JavaScript code
+    document.addEventListener("DOMContentLoaded", function() {
+      var backToTopLink = document.getElementById("back-to-top");
+
+      backToTopLink.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      window.addEventListener("scroll", function() {
+        // Show or hide the back-to-top link based on scroll position
+        if (window.pageYOffset > 100) {
+          backToTopLink.style.display = "block";
+        } else {
+          backToTopLink.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>FAQ</title>
+  <meta name="viewport" content="width=device-width">
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 900px)">
+  <style>
+    /* Add your custom styles here */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    /* Header styles */
+    .banner {
+      background-image: url('background_image.png');
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      color: #fff;
+      text-align: left;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    h1.site-name {
+      font-size: 37px;
+      color: floralwhite;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+    }
+    h2.tagline {
+      font-size: 20px;
+      color: floralwhite;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      font-size: 16px;
+      color: floralwhite;
+    }
+    /* Navigation styles */
+    .navbar {
+      background-color: #333;
+      list-style-type: none;
+      margin: 17px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navbar li a:hover {
+      background-color: #114;
+    }
+    /* Form styles */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table td, table th {
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    textarea {
+      width: 100%;
+    }
+    .form-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    /* FAQ styles */
+    .category {
+      margin-top: 40px;
+    }
+    .category-heading {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .category-image {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+    .question {
+      font-weight: bold;
+      color: #333;
+    }
+    .answer {
+      color: #666;
+    }
+    /* Bottom content styles */
+    .bottom-content {
+      margin-top: 40px;
+    }
+    .bottom-box {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .bottom-box-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    /* Footer styles */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .footer p {
+      margin: 0;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Back-to-top link styles */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: none;
+    }
+    #back-to-top:hover {
+      background-color: #114;
+    }
+  </style>
+  <script>
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 100) {
+        document.getElementById('back-to-top').style.display = 'block';
+      } else {
+        document.getElementById('back-to-top').style.display = 'none';
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <h1 class="site-name">Financial Information</h1>
+        <h2 class="tagline">Building Wealth, One Step at a Time</h2>
+        <p class="contact-info">Contact: Jinesh Patel</p>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="Financial_planning.html">Financial Planning</a></li>
+          <li><a href="Investment_Page.html">Investment Page</a></li>
+          <li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+          <li><a href="Form.html">Form</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- body-content -->
+    <div class="body-content">
+      <div class="section-inner">
+        <h1>FAQ</h1>
+        <!-- category 1 -->
+        <div class="category" id="faq">
+          <h2 class="investment.jpg">Investments</h2>
+          <br>
+          <img src="investment.jpg" alt="Investment" class="category-image">
+          <h3 class="question">Question 1: What is the difference between stocks and bonds?</h3>
+          <p class="answer">Stocks represent ownership in a company, while bonds are debt instruments issued by companies or governments.</p>
+          <h3 class="question">Question 2: How does compound interest work?</h3>
+          <p class="answer">Compound interest is the addition of interest to the initial amount deposited or invested, resulting in exponential growth over time.</p>
+          <h3 class="question">Question 3: What are the benefits of diversifying my investment portfolio?</h3>
+          <p class="answer">Diversifying your investment portfolio helps spread risk by investing in different asset classes, reducing the impact of a single investment's performance on your overall portfolio.</p>
+        </div>
+        <!-- category 2 -->
+        <div class="category">
+          <h2 class="category-heading">Retirement Planning</h2>
+          <br>
+          <img src="retirement.jpg" alt="Retirement Planning" class="category-image">
+          <h3 class="question">Question 4: What is the difference between a traditional IRA and a Roth IRA?</h3>
+          <p class="answer">Traditional IRAs offer tax-deferred contributions and tax-deductible contributions, while Roth IRAs provide tax-free withdrawals in retirement.</p>
+          <h3 class="question">Question 5: How can I save for retirement and what are the best retirement account options?</h3>
+          <p class="answer">Saving for retirement can be done through retirement accounts like 401(k)s or IRAs, and it's important to contribute regularly and take advantage of employer matches if available.</p>
+        </div>
+        <!-- category 3 -->
+        <div class="category">
+          <h2 class="category-heading">Personal Finance</h2>
+          <br>
+          <img src="personal-finance.jpg" alt="Personal Finance" class="category-image">
+          <h3 class="question">Question 6: How can I create a budget and stick to it?</h3>
+          <p class="answer">Creating and sticking to a budget allows you to track income and expenses, prioritize savings, and achieve financial goals.</p>
+          <h3 class="question">Question 7: What is the importance of an emergency fund and how much should I save?</h3>
+          <p class="answer">An emergency fund provides a financial safety net for unexpected expenses, and ideally, it should cover 3-6 months of living expenses.</p>
+          <h3 class="question">Question 8: What are the key factors to consider when choosing a credit card?</h3>
+          <p class="answer">When choosing a credit card, consider factors such as interest rates, annual fees, rewards programs, and credit card benefits that align with your spending habits and financial goals.</p>
+          <h3 class="question">Question 9: What is the difference between a credit score and a credit report?</h3>
+          <p class="answer">A credit score is a numerical representation of your creditworthiness, while a credit report provides a detailed record of your credit history, including accounts, payment history, and inquiries.</p>
+          <h3 class="question">Question 10: How does inflation impact my savings and investments?</h3>
+          <p class="answer">Inflation erodes the purchasing power of money over time, so it's crucial to consider inflation when saving and investing to ensure your money keeps pace with rising prices.</p>
+        </div>
+      </div>
+    </div><!--/body-content-->
+    <!-- bottom content -->
+    <div class="bottom-content">
+      <!-- two-columns -->
+      <div class="two-columns clearfix">
+        <!-- main -->
+        <div class="main mobile-collapse">
+          <h2>Additional Content</h2>
+          <p>Financial content provides numerous benefits, including its educational value that enhances financial literacy and enables informed decision-making. It offers easily accessible information through online platforms, facilitating self-paced learning from credible sources. The wide array of topics covered caters to diverse interests and financial objectives, while expert perspectives from industry professionals offer valuable insights. However, financial content also presents some challenges. Conflicting advice from different sources can create confusion, and the abundance of information can be overwhelming to navigate. Biases and commercial interests may influence the content, and the complex terminology used can hinder comprehension. Moreover, the generic nature of the advice may not address individual circumstances, emphasizing the importance of personalized guidance. It is crucial to approach financial content with a critical mindset and seek professional assistance when needed.</p>
+          <ul>
+            <li>Set specific financial goals and create a plan to achieve them.</li>
+            <li>Track your expenses and create a budget to manage your money effectively.</li>
+            <li>Build an emergency fund to cover unexpected expenses.</li>
+            <li>Regularly review and adjust your investment portfolio based on your goals and risk tolerance.</li>
+            <li>Stay informed about financial news and developments to make informed decisions.</li>
+          </ul>
+        </div><!--/main-->
+        <!-- side -->
+        <div class="side mobile-collapse">
+          <div class="bottom-box">
+            <h3 class="bottom-box-heading">Box 1: Financial Tips</h3>
+            <ul>
+              <li>Save a portion of your income every month.</li>
+              <li>Start investing early to take advantage of compound interest.</li>
+              <li>Pay off high-interest debts first to save on interest payments.</li>
+              <li>Create a budget and track your expenses regularly.</li>
+              <li>Review your insurance coverage to ensure adequate protection.</li>
+            </ul>
+          </div>
+          <div class="bottom-box">
+            <h3 class="bottom-box-heading">Box 2: Financial Resources</h3>
+            <ul>
+              <li><a href="https://www.investopedia.com">Investopedia</a> - Comprehensive financial education and resources.</li>
+              <li><a href="https://www.morningstar.com">Morningstar</a> - Investment research and analysis.</li>
+              <li><a href="https://www.irs.gov">IRS</a> - Official website for tax-related information and forms.</li>
+              <li><a href="https://www.bls.gov">Bureau of Labor Statistics</a> - Economic data and employment information.</li>
+              <li><a href="https://www.consumerfinance.gov">Consumer Financial Protection Bureau</a> - Consumer finance information and resources.</li>
+            </ul>
+          </div>
+        </div><!--/side-->
+      </div><!--/two-columns-->
+      <!-- back-to-top button -->
+      <a href="javascript:void(0)" id="back-to-top" onclick="scrollToTop()">Back to Top</a>
+    </div><!--/bottom-content-->
+    <!-- footer -->
+    <div class="footer">
+      <div class="section-inner">
+        <p>&copy; 2023 Financial Information Website. All rights reserved. Jinesh Patel</p>
+      </div>
+    </div><!--/footer-->
+  </div>
+</body>
+</html>

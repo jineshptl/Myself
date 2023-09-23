@@ -1,0 +1,110 @@
+/* Stylesheet for your portfolio */
+/* You can add more styles as needed */
+
+/* Banner styles */
+.banner {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Vertical navigation bar styles */
+nav.vertical {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav.vertical ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.vertical ul li {
+  margin-bottom: 10px;
+}
+
+nav.vertical ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Divs or articles or sections */
+div,
+article,
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Headings with different formats */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Background color for navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+/* List item styles */
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li:before {
+  content: "•";
+  margin-right: 5px;
+  color: #333;
+}
+
+ul li ul li:before {
+  content: "-";
+  margin-right: 5px;
+  color: #555;
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Vertical or horizontal bars */
+.horizontal-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+}
+
+.vertical-bar {
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  margin: 0 10px;
+}
+
+/* Additional styles */
+/* Add your own additional styles here */

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinesh Patel - Resume</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your external stylesheet -->
+  <style>
+    /* Additional CSS styles for the footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Back to Top styles */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      text-decoration: none;
+      background-color: #f1f1f1;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .back-to-top:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="banner">Jinesh Patel</h1>
+    <nav class="vertical">
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="websites.html">Websites</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Resume</h2>
+    </section>
+
+    <section>
+      <h3>Professional Summary</h3>
+      <p>
+        IS Support Service professional with 2+ years of experience. Proficient in Windows 10, providing customer support for client devices. Demonstrates confidence and competence in stressful situations, with strong communication and organizational skills. A collaborative team player who actively seeks to gain and share knowledge, taking ownership of issues through resolution. Possesses excellent understanding of business operations and software tools implementation.
+      </p>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <p>
+        <strong>Framingham State University</strong>, Framingham, MA<br>
+        Bachelor of Science in Computer Science (GPA: 3.7)<br>
+        Anticipated May 2025<br>
+        Relevant Coursework: C++ Programming, Data Structures, Binary Language, Web Design, IT.
+      </p>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>C++</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>IS/IT</li>
+        <li>Office 365</li>
+        <li>PC Imaging</li>
+        <li>ServiceNow</li>
+        <li>Decommission</li>
+        <li>Network Configuration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Professional Experience</h3>
+      <article>
+        <h4>UMass Chan Medical School - Worcester, MA (2022-Now)</h4>
+        <p>
+          <strong>Technician, PC Services II</strong><br>
+          - IT Service Management Tools / Inventory Management (ServiceNow).<br>
+          - Decommissioning all computers by ensuring device hard drives are encrypted.<br>
+          - Collaborating with technology teams across the hospital to provide user support in numerous UMASS facilities.
+        </p>
+      </article>
+
+      <article>
+        <h4>Massachusetts General Hospital (MGH) - Boston, MA (2022-2022)</h4>
+        <p>
+          <strong>IS Support Service / Network Support</strong><br>
+          - IT Service Management Tools / Inventory Management (Remedy, ServiceNow).<br>
+          - Deploying computers to new hires through walk-up service, configuring and adding them to MGH server.<br>
+          - Providing client care in person or remotely, troubleshooting difficulties with Exchange Online.<br>
+          - Collaborating with technology teams across the hospital to support users in numerous MGH facilities.<br>
+          - Asset management, PC imaging, hardware replacements, network jack activation, and hardware disposal.
+        </p>
+      </article>
+
+      <article>
+        <h4>Shrewsbury High School - Shrewsbury, MA (2018-2020)</h4>
+        <p>
+          <strong>Help Desk Specialist</strong><br>
+          - Providing help desk support via email, phone calls, and in person.<br>
+          - Creating reports using Microsoft applications and related tools.<br>
+          - Communicating effectively and professionally with team members, clients, and customers.<br>
+          - Collaborating with network administrators to document logs and relevant information for customer problems.<br>
+          - Providing support for hardware and equipment based on documented procedures, tools, and manuals.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Jinesh Patel. All rights reserved.</p>
+  </footer>
+
+  <a href="#" class="back-to-top">Back to Top</a>
+
+  <script>
+    // Debounce function to limit the frequency of scroll event
+    function debounce(func, wait = 10, immediate = true) {
+      let timeout;
+      return function () {
+        const context = this,
+          args = arguments;
+        const later = function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    }
+
+    // Smooth scroll to top when clicking the "Back to Top" button
+    document.querySelector('.back-to-top').addEventListener('click', function (event) {
+      event.preventDefault();
+      const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, c - c / 8);
+        }
+      };
+      scrollToTop();
+    });
+
+    // Show/hide the "Back to Top" button based on scrolling
+    const backToTopButton = document.querySelector('.back-to-top');
+    const handleScroll = debounce(function () {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+    window.addEventListener('scroll', handleScroll);
+  </script>
+</body>
+</html>

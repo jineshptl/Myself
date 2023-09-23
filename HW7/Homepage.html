@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+
+    /* Header styles */
+    .banner {
+      background-image: url('background_image.png');
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      color: #fff;
+      text-align: left;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h1.site-name {
+      font-size: 37px;
+      color: floralwhite;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    h2.tagline {
+      font-size: 20px;
+      color: floralwhite;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      color: floralwhite;
+    }
+
+    /* Navigation styles */
+    .navbar {
+      background-color: #333;
+      list-style-type: none;
+      margin: 17px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      background-color: #114;
+    }
+
+    /* Form styles */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table td, table th {
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    .form-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Back-to-top link styles */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: none;
+    }
+
+    #back-to-top:hover {
+      background-color: #114;
+    }
+    
+    /* Featured resource styles */
+    .featured-resource {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .featured-resource img {
+      width: 100px;
+      margin-right: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner">
+        <h1 class="site-name">Financial Information</h1>
+        <h2 class="tagline">Building Wealth, One Step at a Time</h2>
+        <p class="contact-info">Contact: Jinesh Patel</p>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="Financial_planning.html">Financial Planning</a></li>
+          <li><a href="Investment_Page.html">Investment Page</a></li>
+          <li><a href="Retirement_Planning.html">Retirement Planning</a></li>
+          <li><a href="Form.html">Form</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Homepage</h1>
+
+      <section>
+        <h2>About Us</h2>
+        <p>Our website is dedicated to providing valuable insights and resources to help you make informed financial decisions and achieve your financial goals. We cover a wide range of financial topics, including financial planning, investment strategies, retirement planning, and financial education.</p>
+      </section>
+
+      <section>
+        <h2>Stay Updated</h2>
+        <p>Sign up for our newsletter to receive regular updates, exclusive content, and helpful resources directly in your inbox. Stay informed about the latest financial trends and news.</p>
+        <form action="newsletter_signup.php" method="POST">
+          <label for="newsletter-email">Enter your email address:</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Featured Articles and Resources</h2>
+        <div class="featured-resources">
+          <div class="featured-resource">
+            <a href="https://www.cnbc.com">
+              <img src="cnbc_image.jpg" alt="CNBC Logo">
+            </a>
+            <p>Discover our assortment of highlighted articles, guides, and resources created to provide you with the information and instruments necessary for efficient financial management. Whether you're seeking budgeting advice or investment tactics, we have everything you need. CNBC presents a comprehensive website comprising articles, videos, and interactive tools that keep individuals updated on the most recent financial news and market developments. It offers market data, stock quotes, economic indicators, and analysis delivered by a team of seasoned journalists and financial experts. Furthermore, CNBC produces various television shows and maintains a significant presence on social media platforms. Click the CNBC Icon to open the website.</p>
+          </div>
+          <div class="featured-resource">
+            <a href="https://www.morningstar.com">
+              <img src="morningstar_image.jpg" alt="Morningstar Logo">
+            </a>
+            <p>Morningstar is a leading provider of independent investment research, offering data, analysis, and insights to help individuals make informed investment decisions. Their comprehensive platform provides information on stocks, mutual funds, ETFs, and more. Click the Morningstar Icon to open the website.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Financial Information Website. All rights reserved. Jinesh Patel</p>
+    </footer>
+
+    <a href="#top-link" id="back-to-top">Back to Top</a> <!-- Back-to-top link -->
+
+  </div>
+
+  <script>
+    // JavaScript code
+    document.addEventListener("DOMContentLoaded", function() {
+      var backToTopLink = document.getElementById("back-to-top");
+
+      backToTopLink.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      window.addEventListener("scroll", function() {
+        // Show or hide the back-to-top link based on scroll position
+        if (window.pageYOffset > 70) {
+          backToTopLink.style.display = "block";
+        } else {
+          backToTopLink.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
